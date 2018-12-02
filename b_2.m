@@ -1,7 +1,5 @@
 M = 6;
 N = 6;
-x = zeros(M,N);
-t = zeros(M,N);
 u = zeros(M,N);
 linsysa = zeros(M-2,N);
 linsystemp = zeros(M,N-2);

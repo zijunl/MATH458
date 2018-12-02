@@ -1,11 +1,6 @@
 M = 6;
 N = 6;
 linsysa = zeros(M-2,N);
-linsysi = zeros(M-2,M);
-linsysx = zeros(M,N);
-linsyst = zeros(M,N);
-linsysxnt = zeros(M,N);
-x = zeros(M,N);
 tempu = zeros(M,N-2);
 u = zeros(M,N);
 dx = 1/(M-1);
