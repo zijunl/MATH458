@@ -28,18 +28,6 @@ for i = 1:(M)
         end
     end
 end
-%{
-for i = 1:(M-1)
-    for j = 1:N
-        x(i,j) = 1/5 * (j-1);
-        t(M+1-i,j) = 1/5 * (i-1);
-        u(M,j) = 1/5 * pi*(j-1);
-    end
-end
-for j = 1:(N-1)
-    linsystemp = linsysb*(u(M-j+1,:))';
-    u(M-j,:) = linsysa\linsystemp;
-end
-%}
+
 disp(linsysa)
 
