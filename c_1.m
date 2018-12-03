@@ -22,12 +22,19 @@ for i = 1:(M)
 end
 for i = 1:(M)
     for j = 1:N
-        for k = 1:Q
-            u(1,j,k) = 100;
-            u(i,1,k) = 100;
+        for z = 1:Q
+            u(1,j,z) = 100;
+            u(i,1,z) = 100;
+        end
+    end
+end
+for i = 1:(M)
+    for j = 1:N
+        for z = 1:Q
+            u(i,j,z+1) = k/c/phi*linsysa *(u(i,j,z))' + linsysb*(u(i+1,j,k);   
         end
     end
 end
 
-disp(linsysa)
+disp(u)
 
